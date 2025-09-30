@@ -120,7 +120,9 @@ const Showcase = () => {
                     key={index}
                     onClick={() => setActiveProduct(index)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      activeProduct === index ? "bg-[#32ba78] w-6" : "bg-gray-300"
+                      activeProduct === index
+                        ? "bg-[#32ba78] w-6"
+                        : "bg-gray-300"
                     }`}
                     aria-label={`View product ${index + 1}`}
                   />
@@ -142,17 +144,18 @@ const Showcase = () => {
           {showcaseItems.map((item, index) => (
             <div
               key={index}
-              className={`group relative bg-white border border-gray-100 rounded-xl overflow-hidden transition-all duration-500 hover:shadow-xl ${
+              className={`w-[95%] mx-auto sm:w-full group relative bg-white border border-gray-100 rounded-xl overflow-hidden transition-all duration-500 hover:shadow-xl ${
                 animateItems
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative h-100 overflow-hidden sm:h-100 md:h-100">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
+                  s
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 {item.badge && (
@@ -173,13 +176,17 @@ const Showcase = () => {
                     <ArrowUpRight className="w-4 h-4 text-[#32ba78]" />
                   </div>
                 </div>
-                
+
                 <p className="text-gray-600 mb-4 text-sm line-clamp-2">
                   {item.description}
                 </p>
-                
+
                 <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <span className={`font-bold ${item.price === "Free" ? "text-[#32ba78]" : "text-gray-900"}`}>
+                  <span
+                    className={`font-bold ${
+                      item.price === "Free" ? "text-[#32ba78]" : "text-gray-900"
+                    }`}
+                  >
                     {item.price}
                   </span>
                   <a
