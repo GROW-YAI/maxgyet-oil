@@ -13,6 +13,7 @@
     "@headlessui/react": "^2.2.0",
     "@react-google-maps/api": "^2.20.6",
     "@tailwindcss/vite": "^4.0.6",
+    "boafo-accessibility-widget": "^1.1.8",
     "framer-motion": "^12.4.7",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
