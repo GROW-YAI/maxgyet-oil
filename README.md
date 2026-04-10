@@ -84,31 +84,6 @@ To create a production build:
 npm run build
 ```
 
-The built files will be in the `dist` directory.
-
-## Project Structure
-
-```
-maxgyet-oil/
-├── app/                    # Application source code
-│   ├── components/         # React components
-│   │   └── BoafoWidgetInitializer.tsx
-│   ├── layout.tsx         # Root layout component
-│   └── globals.css        # Global styles
-├── src/                   # Additional source files
-│   ├── components/        # Shared components
-│   ├── layouts/           # Layout components
-│   ├── pages/             # Page components
-│   └── vite-env.d.ts     # TypeScript declarations
-├── public/                # Static assets
-├── .env                   # Environment variables (not committed)
-├── .env.example           # Environment variable template
-├── .gitignore            # Git ignore rules
-├── package.json          # Project dependencies
-├── tailwind.config.js    # Tailwind CSS configuration
-├── tsconfig.json         # TypeScript configuration
-└── vite.config.js        # Vite configuration
-```
 
 ## Environment Variables
 

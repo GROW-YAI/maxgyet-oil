@@ -40,7 +40,7 @@ const AboutInnovator = () => {
     <section id="about-innovator" className="py-16 bg-white my-container">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Minimal Innovator Preview */}
-        <div className="flex flex-col md:flex-row items-center gap-12 mb-12">
+        <div className="flex flex-col md:flex-row items-start gap-12 mb-12">
           {/* Brief Info */}
           <div className="w-full md:w-3/5 lg:w-2/3" data-aos="fade-right">
             <div className="space-y-6">

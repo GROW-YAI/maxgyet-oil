@@ -61,14 +61,14 @@ const Hero = () => {
             </div>
           </motion.div>
           {/* Right column - Hero image */}
-          <motion.div
-            className="w-full lg:w-1/2 lg:pl-12 mb-10 lg:mb-0"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            data-aos="fade-left"
-            data-aos-delay="200"
-          >
+            <motion.div
+              className="w-full lg:w-1/2 lg:pl-12 mb-10 lg:mb-0 text-left"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
               Clean Energy from Waste{" "}
               <span className="text-[#32ba78]">

@@ -66,7 +66,7 @@ const AboutProduct = () => {
         </div>
 
         {/* Main product showcase */}
-        <div className="flex flex-col lg:flex-row items-center gap-12 justify-center mb-20">
+        <div className="flex flex-col lg:flex-row items-start gap-12 justify-start mb-20">
           <div className="w-full lg:w-1/2" data-aos="fade-right">
             <span className="text-[#32ba78] font-semibold text-sm tracking-wider uppercase">
               A Sustainable Solution for a Cleaner Future
@@ -74,7 +74,7 @@ const AboutProduct = () => {
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mt-2 mb-4">
               How It Works
             </h3>
-            <p className="text-gray-600 mb-6 text-justify">
+            <p className="text-gray-600 mb-6 text-left">
               The Maxgyet Oil process transforms waste materials into low-cost,
               eco-friendly fuel, helping communites reduce pollution and gain
               energy independence.
